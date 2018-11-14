@@ -3,43 +3,116 @@ body {
     margin: 0;
 }
 
-nav {
-    display: block;
+.fix-center-right {
     margin: 0;
-    margin-right: 5%;
     padding: 0;
     position: fixed;
     right: 0;
-    text-align: right;
-    text-transform: uppercase;
     top: 50%;
     transform: translate(0, -50%);
 }
 
-nav img {
-    width: 5em;
+nav {
+    background-color: white;
+    display: block;
+    font-family: 'Open Sans Condensed';
+    font-size: 150%;
+    text-align: right;
+    text-transform: uppercase;
+    max-width: 10%;
+    z-index: 10;
 }
 
-nav ul {
-    list-style-type: none;
+nav img {
+    max-width: 75%;
+}
+
+nav a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:link {
+    color: inherit;
+}
+
+nav a:visited {
+    color: inherit;
+}
+
+#social-media {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    transform: translate(0, -100%);
+}
+
+.fa {
+    color: white;
+    display: block;
+    font-size: 300%;
+    padding: 10%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: .5;
+}
+
+.fa-instagram {
+    background-color: #fd1d1d;
+}
+
+.fa-facebook {
+    background-color: #3b5998;
+}
+
+.fa-linkedin {
+    background-color: #0077b5;
 }
 
 #splash {
     /* background-image: url("../img/banner.jpg");
     background-position: center;
-    background-size: cover; */
+    background-size: contain; */
+    padding: 5%;
     height: 100vh;
     transition: background 1.5s linear;
 }
 
-#banner {
-    padding: 5%;
+#title-block {
+    float: left;
+    max-width: 50%;
 }
 
 #title {
+    margin: 0;
     font-family: 'Open Sans';
+    font-size: 300%;
 }
 
 #subtitle {
     font-family: 'Open Sans Condensed';
+    font-size: 200%;
+}
+
+#official-banner {
+    float: right;
+    max-width: 15%;
+}
+
+.section-header {
+    font-family: 'Open Sans';
+    font-size: 250%;
+    font-weight: lighter;
+    letter-spacing: .5rem;
+    text-align: center;
+    text-transform: uppercase;
 }
