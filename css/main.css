@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: block;
+    margin: 0;
+    margin-right: 5%;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    text-align: right;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+nav img {
+    width: 5em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+#splash {
+    /* background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover; */
+    height: 100vh;
+    transition: background 1.5s linear;
+}
+
+#banner {
+    padding: 5%;
+}
+
+#title {
+    font-family: 'Open Sans';
+}
+
+#subtitle {
+    font-family: 'Open Sans Condensed';
+}
